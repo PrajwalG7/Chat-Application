@@ -12,14 +12,10 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
-/**
- *
- * @author Aryan
- */
+
 public class chatClient extends javax.swing.JFrame {
 
     
-    //our initialization
     static Socket s;
     static DataInputStream dis;
     static DataOutputStream dout;
@@ -101,7 +97,7 @@ public class chatClient extends javax.swing.JFrame {
         dout.writeUTF(msg);
         msg_text.setText("");
         }catch( IOException e){
-            //code for exception
+            //code here
         }
     }//GEN-LAST:event_msg_sendActionPerformed
 
@@ -139,7 +135,6 @@ public class chatClient extends javax.swing.JFrame {
             }
         });
         
-        //our code logic
         
         try{
         String msgin="";  
