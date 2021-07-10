@@ -11,13 +11,9 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-/**
- *
- * @author Aryan
- */
 public class chatServer extends javax.swing.JFrame {
     
-    //our initialization
+   
     static ServerSocket ss;
     static Socket s;
     static DataInputStream dis;
@@ -104,7 +100,7 @@ public class chatServer extends javax.swing.JFrame {
         dout.writeUTF(msg);
         msg_text.setText("");
         }catch( IOException e){
-            //code for exception
+            //code here
         }
         
     }//GEN-LAST:event_msg_sendActionPerformed
@@ -143,7 +139,7 @@ public class chatServer extends javax.swing.JFrame {
             }
         });
         
-        //our code logic
+        //code logic
         
         try{
         String msgin="";
@@ -159,7 +155,7 @@ public class chatServer extends javax.swing.JFrame {
          }
         }
         catch(Exception e){
-            //code
+            //code here
         }
     }
 
